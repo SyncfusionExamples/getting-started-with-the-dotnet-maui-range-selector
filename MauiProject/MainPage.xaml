@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.Sliders;assembly=Syncfusion.Maui.Sliders"
+             xmlns:charts="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:local="clr-namespace:MauiProject"
+             x:Class="MauiProject.MainPage">
+
+    <sf:SfRangeSelector ShowLabels="True"
+                        ShowTicks="True"
+                        ShowDividers="True"
+                        MinorTicksPerInterval="1"
+                        IsInversed="True"
+                        StepSize="2"
+                        HeightRequest="210"
+                        Minimum="10"
+                        Maximum="20"
+                        Interval="2"
+                        NumberFormat="$#"
+                        RangeStart="14"
+                        RangeEnd="18">
+        <sf:SfRangeSelector.DividerStyle>
+            <sf:SliderDividerStyle ActiveRadius="5" InactiveRadius="6"></sf:SliderDividerStyle>
+        </sf:SfRangeSelector.DividerStyle>
+        <sf:SfRangeSelector.Tooltip>
+            <sf:SliderTooltip />
+        </sf:SfRangeSelector.Tooltip>
+        <charts:SfCartesianChart>
+
+            <charts:SfCartesianChart.BindingContext>
+                <local:DataViewModel/>
+            </charts:SfCartesianChart.BindingContext>
+
+            <charts:SfCartesianChart.XAxes>
+                <charts:DateTimeAxis IsVisible="False"
+                                    ShowMajorGridLines="False" />
+            </charts:SfCartesianChart.XAxes>
+
+            <charts:SfCartesianChart.YAxes>
+                <charts:NumericalAxis IsVisible="False"
+                                     ShowMajorGridLines="False" />
+            </charts:SfCartesianChart.YAxes>
+
+            <charts:SfCartesianChart.Series>
+                <charts:SplineAreaSeries ItemsSource="{Binding Data}"
+                                        XBindingPath="X"
+                                        YBindingPath="Y">
+                </charts:SplineAreaSeries>
+            </charts:SfCartesianChart.Series>
+
+        </charts:SfCartesianChart>
+    </sf:SfRangeSelector>
+    
+</ContentPage>
