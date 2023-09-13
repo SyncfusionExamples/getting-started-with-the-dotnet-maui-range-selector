@@ -19,15 +19,15 @@ Set both major and minor ticks in the track. Use major ticks to show the interva
 
 ## Dividers
 
-Render [dividers](https://help.syncfusion.com/maui/range-selector/divider) in each interval to show the ranges accurately. Customize the size and appearance of the dividers.
+Render [dividers](https://help.syncfusion.com/maui/range-selector/divider?utm_source=github&utm_medium=listing&utm_campaign=maui-range-selector-github-samples) in each interval to show the ranges accurately. Customize the size and appearance of the dividers.
 
 ## Labels
 
-Customize the [labels](https://help.syncfusion.com/maui/range-selector/labels) easily. Change their format, render them at specific intervals, and add prefixes and suffixes.
+Customize the [labels](https://help.syncfusion.com/maui/range-selector/labels?utm_source=github&utm_medium=listing&utm_campaign=maui-range-selector-github-samples) easily. Change their format, render them at specific intervals, and add prefixes and suffixes.
 
 ## Tooltips
 
-Use [tooltips](https://help.syncfusion.com/maui/range-selector/tooltip) to indicate the current selection during interaction. Customize the format, entire text, and visibility of the tooltip.
+Use [tooltips](https://help.syncfusion.com/maui/range-selector/tooltip?utm_source=github&utm_medium=listing&utm_campaign=maui-range-selector-github-samples) to indicate the current selection during interaction. Customize the format, entire text, and visibility of the tooltip.
 
 ## Related Links
 
