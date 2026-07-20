@@ -42,7 +42,8 @@
             </charts:SfCartesianChart.YAxes>
 
             <charts:SfCartesianChart.Series>
-                <charts:SplineAreaSeries ItemsSource="{Binding Data}"
+                <charts:SplineAreaSeries x:DataType="local:DataViewModel"
+                                        ItemsSource="{Binding Data}"
                                         XBindingPath="X"
                                         YBindingPath="Y">
                 </charts:SplineAreaSeries>
